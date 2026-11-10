@@ -1,2 +1,2 @@
-# Depdende-Kung-Web-Yan
+# Depende-Kung-Web-Yan
 Group Repo
