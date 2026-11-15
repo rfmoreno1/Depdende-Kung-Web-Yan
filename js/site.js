@@ -1,5 +1,3 @@
-/* Whisker & Wonder • contact and product email drafts (Module 5.2 Method #2).
-   A mailto: URL only opens the visitor's email app; it does not send anything itself. */
 (() => {
   'use strict';
   const toggle = document.getElementById('nav-toggle');
