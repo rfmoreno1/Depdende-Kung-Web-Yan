@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ask Whisker &amp; Wonder a question through an accessible email-based contact form.">
   <title>Contact Us | Whisker &amp; Wonder</title>
-  <!-- Module 6.1: Bootstrap 6.0.0-alpha.1 CDN, per your instructor's example -->
+  <!-- Bootstrap 6 CDN (Module 6.1). Custom styles are loaded after Bootstrap. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,23 +18,23 @@
 <header class="site-header">
   <nav class="navbar site-nav" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="index.html" class="brand" aria-label="Whisker and Wonder, home">
-        <img src="images/logo-placeholder.svg" width="108" height="74" alt="Whisker and Wonder temporary logo">
+      <a href="index.html" class="navbar-brand brand" aria-label="Whisker and Wonder, home">
+        <img src="images/logo-compact.png" width="220" height="220" alt="Whisker and Wonder">
       </a>
       <button id="nav-toggle" class="nav-toggle" type="button" aria-controls="site-links" aria-expanded="false" aria-label="Toggle navigation"><span aria-hidden="true">☰</span> <span class="mobile-menu-label">Menu</span></button>
-      <ul class="nav-links" id="site-links">
-        <li><a href="index.html" data-nav="home">Home</a></li>
-        <li><a href="index.html#products" data-nav="shop">Shop</a></li>
-        <li><a href="index.html#about" data-nav="about">About</a></li>
-        <li><a href="contact.html" data-nav="contact" aria-current="page">Contact</a></li>
+      <ul class="nav navbar-nav nav-links" id="site-links">
+        <li class="nav-item"><a class="nav-link" href="index.html" data-nav="home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#products" data-nav="shop">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about" data-nav="about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" data-nav="contact" aria-current="page">Contact</a></li>
       </ul>
     </div>
   </nav>
 </header>
 <main id="main-content" class="flex-grow-1">
-<section class="contact-page container"><div class="contact-intro row g-7"><div class="md:col-6"><h1>Contact Us!</h1><p><strong>Email:</strong> <a href="mailto:hello@examplewebsite142.com">hello@examplewebsite142.com</a><br><strong>Phone:</strong> Ask us by email for current contact details.</p></div><div class="md:col-6 contact-social"><div class="social-glyphs" aria-label="Social platforms shown in the mockup"><span aria-hidden="true">f</span><span aria-hidden="true">◎</span><span aria-hidden="true">𝕏</span><span aria-hidden="true">♪</span></div><p>We are happy to answer your queries. Reach out using the form below or your preferred email app.</p></div></div>
-  <section class="contact-form-panel" aria-labelledby="send-heading"><div class="row g-7"><div class="md:col-5"><p class="mini-label">WE'D LOVE TO HEAR FROM YOU</p><h2 id="send-heading">Send a message</h2><p>Fill in the details and we'll prepare an email draft for you. Your email program will open; <strong>you must press Send in your email app</strong> to finish.</p><p class="privacy-note">Your message is composed on your device. This demo has no database or server.</p></div><div class="md:col-7"><form id="contact-form" novalidate><div class="two-fields"><div><label for="contact-name">Your name <span aria-hidden="true">*</span></label><input id="contact-name" name="name" autocomplete="name" required maxlength="100" placeholder="Your name"></div><div><label for="contact-email">Email address <span aria-hidden="true">*</span></label><input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div></div><div><label for="contact-subject">Subject <span aria-hidden="true">*</span></label><input id="contact-subject" name="subject" required maxlength="120" placeholder="What can we help you with?"></div><div><label for="contact-message">Message <span aria-hidden="true">*</span></label><textarea id="contact-message" name="message" required minlength="10" rows="5" placeholder="Write your question or concern here"></textarea></div><button type="submit" class="btn-primary-brand">Prepare email</button><p id="contact-feedback" class="form-feedback" role="status" aria-live="polite"></p></form></div></div></section>
-  <section class="faq-section" id="faq" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently Asked Questions</h2><p class="faq-disclaimer">The FAQ wording in the Figma mockup is illustrative. Please confirm store-specific shipping, registration, payment, and returns details before publication.</p><details class="faq-item"><summary>How do I place an order?</summary><p>Choose a shirt on the Shop section, select your size and quantity, then select Order Now. Your email app will open with a prepared order message to review and send.</p></details>
+<section class="contact-page container"><div class="contact-intro row g-7"><div class="md:col-6"><h1>Contact Us!</h1><p><strong>Email:</strong> <a href="mailto:hello@examplewebsite142.com">hello@examplewebsite142.com</a><br><strong>Phone:</strong> Ask us by email for current contact details.</p></div><div class="md:col-6 contact-social"><div class="contact-badge"><span class="brand-icon phone-icon" aria-hidden="true"></span><strong>Let’s talk!</strong></div><p>We are happy to answer your queries. Reach out using the form below or your preferred email app.</p></div></div>
+  <section class="contact-form-panel" aria-labelledby="send-heading"><div class="row g-7"><div class="md:col-5"><p class="mini-label">WE'D LOVE TO HEAR FROM YOU</p><h2 id="send-heading">Send a message</h2><p>Fill in the details and we'll prepare an email draft for you. Your email program will open; <strong>you must press Send in your email app</strong> to finish.</p><p class="privacy-note">Your message is composed on your device. This demo has no database or server.</p></div><div class="md:col-7"><form id="contact-form" novalidate><div class="two-fields"><div><label for="contact-name">Your name <span aria-hidden="true">*</span></label><input class="form-control" id="contact-name" name="name" autocomplete="name" required maxlength="100" placeholder="Your name"></div><div><label for="contact-email">Email address <span aria-hidden="true">*</span></label><input class="form-control" id="contact-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div></div><div><label for="contact-subject">Subject <span aria-hidden="true">*</span></label><input class="form-control" id="contact-subject" name="subject" required maxlength="120" placeholder="What can we help you with?"></div><div><label for="contact-message">Message <span aria-hidden="true">*</span></label><textarea class="form-control" id="contact-message" name="message" required minlength="10" rows="5" placeholder="Write your question or concern here"></textarea></div><button type="submit" class="btn-solid theme-primary btn-primary-brand">Prepare email</button><p id="contact-feedback" class="form-feedback" role="status" aria-live="polite"></p></form></div></div></section>
+  <section class="faq-section" id="faq" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently Asked Questions</h2><p class="faq-disclaimer">For current payment, shipping, availability and returns information, please contact us before ordering.</p><details class="faq-item"><summary>How do I place an order?</summary><p>Choose a shirt on the Shop section, select your size and quantity, then select Order Now. Your email app will open with a prepared order message to review and send.</p></details>
 <details class="faq-item"><summary>What are the available payment methods?</summary><p>Please email us to confirm available payment methods before sending any payment.</p></details>
 <details class="faq-item"><summary>How long will it take for my order to arrive?</summary><p>Delivery times vary by destination and courier. Ask us for a current estimate when placing your order.</p></details>
 <details class="faq-item"><summary>Are you a registered business?</summary><p>Please request current business registration information directly from the store.</p></details>
@@ -44,7 +44,7 @@
 <details class="faq-item"><summary>Do you provide tracking details for orders?</summary><p>Ask the store whether tracking is available for your chosen delivery method.</p></details></section>
 </section>
 </main>
-<footer class="site-footer"><div class="container footer-grid">
+<footer class="site-footer mt-auto"><div class="container footer-grid">
   <div><h2>Quick Links</h2><ul><li><a href="index.html">Home</a></li><li><a href="index.html#products">Shop</a></li><li><a href="index.html#about">About Us</a></li></ul></div>
   <div><h2>Help &amp; Information</h2><ul><li><a href="contact.html">Contact Us</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html#faq">Frequently Asked Questions</a></li></ul></div>
   <p class="copyright">© 2026 Whisker &amp; Wonder · All rights reserved.</p>

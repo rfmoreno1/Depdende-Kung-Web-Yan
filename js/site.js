@@ -26,6 +26,11 @@
     const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     if (feedback) {
       feedback.textContent = 'Your email app should open with a prepared draft. Please review it and press Send there. If nothing opens, check that a default email app is configured.';
+      // Keep an accessible fallback link if the email app does not open.
+      const link = document.createElement('a');
+      link.href = mailto;
+      link.textContent = ' Open email draft again.';
+      feedback.appendChild(link);
     }
     window.location.href = mailto;
   }
@@ -55,8 +60,31 @@ ${message}`;
   document.querySelectorAll('.order-form').forEach(form => {
     const quantity = form.querySelector('.quantity-field');
     const status = form.querySelector('.order-feedback');
-    form.querySelector('.quantity-minus')?.addEventListener('click',()=> {quantity.value=String(Math.max(1,Number(quantity.value||1)-1));});
-    form.querySelector('.quantity-plus')?.addEventListener('click',()=> {quantity.value=String(Math.min(20,Number(quantity.value||1)+1));});
+    const subtotal = form.querySelector('.order-subtotal strong');
+    const minus = form.querySelector('.quantity-minus');
+    const plus = form.querySelector('.quantity-plus');
+
+    // Show the current subtotal as the customer changes quantity.
+    function updateSubtotal() {
+      const qty = Number(quantity.value);
+      if (Number.isInteger(qty) && qty >= 1 && qty <= 20) {
+        if (subtotal) subtotal.textContent = '₱' + (Number(form.dataset.price) * qty).toLocaleString('en-PH');
+      } else if (subtotal) {
+        subtotal.textContent = '—';
+      }
+      minus.disabled = qty <= 1;
+      plus.disabled = qty >= 20;
+    }
+    minus.addEventListener('click', () => {
+      quantity.value = String(Math.max(1, Number(quantity.value || 1) - 1));
+      updateSubtotal();
+    });
+    plus.addEventListener('click', () => {
+      quantity.value = String(Math.min(20, Number(quantity.value || 1) + 1));
+      updateSubtotal();
+    });
+    quantity.addEventListener('input', updateSubtotal);
+    updateSubtotal();
     form.addEventListener('submit', event=> {
       event.preventDefault();
       if (!validateOrShow(form,status)) return;
