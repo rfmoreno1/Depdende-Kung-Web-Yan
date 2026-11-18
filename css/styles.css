@@ -564,3 +564,54 @@ button:disabled { opacity:.65; cursor:not-allowed; }
   .product-info h1 { font-size:2.75rem; line-height:1.15; margin-bottom:.5rem; }
 }
 @media (min-width:1500px) { .product-info h1 { font-size:3rem; } }
+
+/* Brand typography: one scale shared by every page. Desktop values follow
+   the brand guide; smaller screens use a consistent, readable adaptation. */
+:root {
+  --type-h1:4rem;
+  --type-h2:2.5rem;
+  --type-eyebrow:2.5rem;
+  --type-body:1.5rem;
+  --type-support:1.25rem;
+  --type-action:1.5rem;
+}
+body { font-size:var(--type-body); line-height:1.5; }
+.hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:var(--type-h1); line-height:1.12; }
+.section-heading,.brand-story h2,.contact-form-panel h2,.faq-section>h2,.contact-social h2,.privacy-heading h2,.policy-item h2 { font-size:var(--type-h2); line-height:1.2; }
+.hero-copy .eyebrow { font-size:var(--type-eyebrow); font-weight:700; line-height:1.2; margin-bottom:1rem; }
+.hero-copy p:not(.eyebrow),.product-description,.brand-story p,.contact-intro p,.contact-form-panel p:not(.mini-label):not(.privacy-note):not(.form-feedback),.policy-item p,.policy-lead,.faq-item p,.faq-item summary { font-size:var(--type-body); line-height:1.5; }
+.faq-item summary { font-weight:700; padding:.5rem 0; }
+.faq-item p { margin:.25rem 0 .75rem; padding-left:1.25rem; }
+.faq-item { padding:.75rem 0; border-bottom:1px solid var(--sage); }
+.faq-item:last-child { border-bottom:0; }
+.faq-disclaimer,.contact-intro .social-note,.contact-form-panel .mini-label,.contact-form-panel .privacy-note,.contact-form-panel .form-feedback,.contact-form-panel label,.contact-form-panel input,.contact-form-panel textarea,.policy-toc ol,.privacy-heading .mini-label,.privacy-heading .policy-updated,.order-hint,.image-caption,.stock-label,.order-subtotal small,.product-bottom p,.site-footer h2,.site-footer a,.copyright { font-size:var(--type-support); line-height:1.5; }
+.contact-form-panel input,.contact-form-panel textarea { padding:.65rem .75rem; }
+.btn-primary-brand,.btn-secondary-brand,.product-card h3 { font-size:var(--type-action); }
+.product-card-link,.product-bottom a { font-size:var(--type-support); }
+.hero-copy p:not(.eyebrow) { max-width:unset; margin-bottom:1rem; }
+.hero-copy p:has(+ .btn-large) { margin-bottom:1.5rem; }
+.hero-copy h1 { margin-bottom:1.25rem; }
+.hero-grid { gap:clamp(1.5rem,3vw,3rem); }
+/* The header and hero occupy at least one viewport on desktop. No fixed
+   height or overflow clipping: text can grow and the page can scroll. */
+@media (min-width:1051px) {
+  .hero-section { min-height:calc(100vh - 7rem); min-height:calc(100svh - 7rem); display:flex; align-items:center; padding-block:2.25rem; }
+  .hero-grid { width:100%; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); align-items:center; }
+  .hero-art { aspect-ratio:1/1; max-height:none; }
+}
+@media (max-width:1050px) {
+  :root { --type-h1:3.25rem; --type-h2:2.125rem; --type-eyebrow:1.875rem; --type-body:1.25rem; --type-action:1.25rem; }
+  .hero-grid { display:grid; grid-template-columns:minmax(0,1fr); }
+  .hero-grid > div { width:100%; min-width:0; }
+  .hero-copy { padding-right:0; }
+  .hero-art { margin-inline:auto; width:100%; max-width:32rem; }
+}
+@media (max-width:767px) {
+  :root { --type-h1:2.5rem; --type-h2:1.875rem; --type-eyebrow:1.5rem; }
+  .hero-grid { gap:0; }
+  .hero-art { margin-top:1.5rem; }
+  .policy-item summary h2 { font-size:var(--type-body); }
+  .faq-item p { padding-left:.75rem; }
+  .product-info h1 { overflow-wrap:anywhere; }
+}
+@media (max-width:365px) { :root { --type-h1:2.25rem; } }
