@@ -627,3 +627,42 @@ body { font-size:var(--type-body); line-height:1.5; }
   .product-info h1 { overflow-wrap:anywhere; }
 }
 @media (max-width:365px) { :root { --type-h1:2.25rem; } }
+
+/* Consistent section rhythm, alignments and responsive product hierarchy. */
+.footer-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem clamp(1.25rem,5vw,5rem); align-items:start; }
+.footer-grid > div { min-width:0; }
+.site-footer h2 { margin:0 0 .75rem; }
+.site-footer li { margin:0; }
+.site-footer .copyright { grid-column:1/-1; text-align:center; align-self:auto; padding:1.25rem 0 0; margin:0; border-top:1px solid var(--ink); }
+.brand-story h2 { margin:0 0 1rem; line-height:1.2; }
+.brand-story p { margin:0 0 1.5rem; max-width:42rem; }
+.brand-story { min-width:0; }
+.contact-form-panel > .mini-label { text-align:center; margin:0 0 1.75rem; font-size:var(--type-support); font-weight:700; }
+.contact-form-panel .row { align-items:start; }
+.contact-form-panel h2 { margin:0 0 1rem; }
+.policy-toc { align-self:start; height:auto; min-height:0; padding:1.25rem; }
+.policy-toc h2 { padding:0; margin:0 0 .75rem; }
+.policy-toc ol { margin:0; padding:0 0 0 1.6rem; }
+.policy-toc li { padding:0; margin:0; }
+.policy-toc a { display:block; padding:.5rem 0; min-height:44px; line-height:1.4; }
+.product-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); grid-template-rows:auto 1fr; gap:1rem clamp(2rem,5vw,4.5rem); align-items:start; }
+.product-heading { grid-column:2; grid-row:1; min-width:0; }
+.product-heading .mini-label { font-size:var(--type-support); font-weight:700; margin:0 0 .5rem; }
+.product-heading h1 { font-family:'Darumadrop One','Nunito',sans-serif; font-weight:400; font-size:var(--type-h1); line-height:1.12; margin:0; color:var(--navy); overflow-wrap:anywhere; }
+.product-media { grid-column:1; grid-row:1/3; min-width:0; }
+.product-info { grid-column:2; grid-row:2; padding:0; min-width:0; }
+.product-info .price-large { margin:0 0 1rem; }
+.image-caption { padding-top:.75rem; }
+.product-description { max-width:unset; }
+@media (max-width:767px) {
+  .footer-grid { gap:1rem 1.25rem; }
+  .site-footer .copyright { padding-top:1rem; }
+  .product-page { padding-top:1.5rem; }
+  .product-layout { grid-template-columns:minmax(0,1fr); grid-template-rows:auto; gap:1.25rem; }
+  .product-heading,.product-media,.product-info { grid-column:1; grid-row:auto; }
+  .product-heading .mini-label { margin-bottom:.5rem; }
+  .product-info .price-large { margin-bottom:.75rem; }
+  .image-caption { margin-bottom:0; }
+  .contact-form-panel > .mini-label { margin-bottom:1.25rem; }
+  .brand-story h2 { margin-bottom:1rem; }
+}
