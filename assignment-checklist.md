@@ -6,12 +6,12 @@ Use the official five-page assignment brief and progress report template for sub
 
 | Item | Status | Evidence or remaining task |
 | --- | --- | --- |
-| 1a–1d: Four unique desktop visual mockups | Six branded desktop designs created | Separate editable Figma frames in [Final Branded Mockups](https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=575-55). Original mockups remain intact. Add approved artwork and pair each with its wireframe for documentation. |
+| 1a–1d: Four unique desktop visual mockups | Six branded desktop and six mobile designs created | Separate editable Figma frames in [Final Branded Mockups](https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=575-55). Original mockups remain intact. Add approved artwork and pair each with its wireframe for documentation. |
 | 1e: Wireframe-to-mockup alignment | Needs team documentation | Note changes to button contrast, privacy contents navigation, contact form, product sizes/quantity and placeholders. Explain why each change is necessary. |
 | 2a–2d: Six Bootstrap webpages | Implemented | Home, contact, privacy and three individual product pages. HTML5, viewport, titles, semantic sections, shared navigation, links and footer. |
 | Real product artwork | Blocked on artwork | Product slots are empty cream placeholders. Homepage hero and privacy illustration slots are deliberately empty; neither contains a shirt or substitute logo. Replace with approved artwork when available. |
 | Brand kit | Applied to website | Canva and Figma confirm Darumadrop One, Nunito, navy, mustard, terracotta, sage and cream. Official logo and icon assets exported from Figma. |
-| Figma Code Layer | Source imported | Separate Code Layer 564:390 on the Visual Mockup page. The original frames are unchanged. Open the layer to initialize its preview; preview rendering is not yet verified. |
+| Figma Code Layer | Revised source imported | [Updated Code Layer](https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=579-191) on the Final Branded Mockups page. The original Code Layer and frames remain unchanged. Open the layer to initialize its preview; preview rendering is not yet verified. |
 | GitHub Pages | Six pages verified live | https://rfmoreno1.github.io/Depdende-Kung-Web-Yan/ |
 | 2e: JavaScript Method #2 | Implemented | Contact goes to hello@examplewebsite142.com; each product order goes to orders@examplewebsite142.com. All generate a mailto draft; no automatic sending. |
 | 2f: Accessible and Inclusive Design | Implemented; final review needed | Labels, logical headings, alt text, skip link, visible focus, clear feedback, keyboard controls, contrast and responsive layout. Verify after adding final artwork. |
@@ -58,6 +58,7 @@ Official Figma Brand kit nodes: cat mark 8:38, stacked color 8:46, compact color
 - Contact's required-field validation, a FAQ disclosure, and the privacy contents anchor worked in the published site.
 - Source checks verified 93 local links, 14 image references, a unique H1 per page, and matching label IDs. JavaScript syntax and four draft-generation logic tests passed (no email was sent).
 - Desktop homepage appearance reviewed. Tablet/mobile visual and keyboard checks, CDN verification across devices, and actual email-app handoff still need team testing.
+- Revised source checked for all six pages: 95 link references (local targets and anchors checked), 14 images with nonempty alt text, single H1 and matching form label IDs. All six pages opened on GitHub Pages, and the new homepage and privacy placeholder descriptions were confirmed in the browser accessibility tree. The latest stylesheet refresh was committed, but deployment was still serving older cached styles during review.
 
 ### Remaining checks after final artwork is added
 
