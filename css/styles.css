@@ -666,3 +666,33 @@ body { font-size:var(--type-body); line-height:1.5; }
   .contact-form-panel > .mini-label { margin-bottom:1.25rem; }
   .brand-story h2 { margin-bottom:1rem; }
 }
+
+/* Form header spans the entire panel; privacy note follows the submit action
+   on narrow screens, with a compact two-column desktop arrangement. */
+.contact-form-panel {
+  display:grid;
+  grid-template-columns:minmax(0,5fr) minmax(0,7fr);
+  grid-template-areas:'eyebrow eyebrow' 'copy form' 'note form';
+  grid-template-rows:auto auto 1fr;
+  gap:1.25rem clamp(1.5rem,4vw,3rem);
+  align-items:start;
+}
+.contact-form-panel > .mini-label { grid-area:eyebrow; width:100%; text-align:center; margin:0 0 .5rem; }
+.contact-form-copy { grid-area:copy; min-width:0; }
+.contact-form-copy p { margin:0; }
+.contact-form-panel > form { grid-area:form; min-width:0; }
+.contact-form-panel > .privacy-note { grid-area:note; margin:0; text-align:left; }
+.privacy-heading .policy-updated { font-style:italic; }
+.brand-story .btn-secondary-brand { white-space:nowrap; width:max-content; max-width:100%; padding:.75rem 1rem; gap:.5rem; }
+.brand-story .btn-secondary-brand > span { white-space:nowrap; }
+@media (min-width:1201px) {
+  .featured-layout { grid-template-columns:minmax(0,3fr) minmax(19rem,1fr); }
+}
+@media (max-width:767px) {
+  .contact-form-panel { grid-template-columns:minmax(0,1fr); grid-template-areas:'eyebrow' 'copy' 'form' 'note'; grid-template-rows:auto; gap:1.25rem; }
+  .contact-form-panel > .mini-label { margin:0; }
+  .brand-story .btn-secondary-brand { width:100%; }
+}
+@media (max-width:280px) {
+  .brand-story .btn-secondary-brand,.brand-story .btn-secondary-brand > span { white-space:normal; }
+}
