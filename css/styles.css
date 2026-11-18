@@ -579,7 +579,7 @@ body { font-size:var(--type-body); line-height:1.5; }
 .hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:var(--type-h1); line-height:1.12; }
 .section-heading,.brand-story h2,.contact-form-panel h2,.faq-section>h2,.contact-social h2,.privacy-heading h2,.policy-item h2 { font-size:var(--type-h2); line-height:1.2; }
 .hero-copy .eyebrow { font-size:var(--type-eyebrow); font-weight:700; line-height:1.2; margin-bottom:1rem; }
-.hero-copy p:not(.eyebrow),.product-description,.brand-story p,.contact-intro p,.contact-form-panel p:not(.mini-label):not(.privacy-note):not(.form-feedback),.policy-item p,.policy-lead,.faq-item p,.faq-item summary { font-size:var(--type-body); line-height:1.5; }
+.hero-copy p:not(.eyebrow):not(.hero-tagline),.product-description,.brand-story p,.contact-intro p,.contact-form-panel p:not(.mini-label):not(.privacy-note):not(.form-feedback),.policy-item p,.policy-lead,.faq-item p,.faq-item summary { font-size:var(--type-body); line-height:1.5; }
 .faq-item summary { font-weight:700; padding:.5rem 0; }
 .faq-item p { margin:.25rem 0 .75rem; padding-left:1.25rem; }
 .faq-item { padding:.75rem 0; border-bottom:1px solid var(--sage); }
@@ -588,8 +588,8 @@ body { font-size:var(--type-body); line-height:1.5; }
 .contact-form-panel input,.contact-form-panel textarea { padding:.65rem .75rem; }
 .btn-primary-brand,.btn-secondary-brand,.product-card h3 { font-size:var(--type-action); }
 .product-card-link,.product-bottom a { font-size:var(--type-support); }
-.hero-copy p:not(.eyebrow) { max-width:unset; margin-bottom:1rem; }
-.hero-copy p:has(+ .btn-large) { margin-bottom:1.5rem; }
+.hero-copy p:not(.eyebrow):not(.hero-tagline) { max-width:unset; margin-bottom:1rem; }
+.hero-copy p:not(.eyebrow):has(+ .btn-large) { margin-bottom:1.5rem; }
 .hero-copy h1 { margin-bottom:1.25rem; }
 .hero-grid { gap:clamp(1.5rem,3vw,3rem); }
 /* The header and hero occupy at least one viewport on desktop. No fixed
