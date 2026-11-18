@@ -46,6 +46,6 @@ Complete the four branded desktop mockups beside their wireframes and document a
 
 Original Figma mockups: https://www.figma.com/design/et4i2hMIC7neGCXwESyqss/Whisker---Wonder-MAIN?node-id=512-367
 Final branded editable mockups: https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=575-55
-Figma Code Layer: https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=564-390
+Updated Figma Code Layer: https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=579-191 (open to initialize preview)
 Published website: https://rfmoreno1.github.io/Depdende-Kung-Web-Yan/
 Brand kit: https://www.canva.com/design/DAHX-0dRhxk/P9cF5ItfWr8msgKUR_6x7g/edit
