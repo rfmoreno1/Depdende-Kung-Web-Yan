@@ -747,3 +747,14 @@ body { font-size:var(--type-body); line-height:1.5; }
 @media (min-width:1201px) {
   .featured-layout { grid-template-columns:minmax(0,3fr) minmax(25rem,1fr); }
 }
+
+/* The product category follows the width of its own column, including
+   narrow DevTools device presets. Text can still reflow at enlarged zoom. */
+.product-heading { container-type:inline-size; }
+.product-heading .mini-label {
+  font-size:clamp(1rem,4.6cqi,var(--type-support));
+  letter-spacing:.015em;
+  line-height:1.4;
+  white-space:normal;
+  overflow-wrap:normal;
+}
