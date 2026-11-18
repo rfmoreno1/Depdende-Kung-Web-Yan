@@ -327,3 +327,44 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
   .order-hint,.privacy-note,.image-caption { font-size:16px; }
   .product-card-link { font-size:18px; }
 }
+
+/* Privacy policy: restore the two distinct panels from the wireframe.
+   Dark navy keeps the sage hero and warm number badges readable. */
+.privacy-heading { padding:40px 0 0; background:transparent; }
+.privacy-hero {
+  background:var(--sage);
+  border:2px solid var(--ink);
+  border-radius:20px;
+  padding:38px clamp(24px,4vw,56px);
+  color:var(--ink);
+}
+.privacy-heading h1,.privacy-heading h2,.privacy-heading p,
+.privacy-heading a,.privacy-heading .policy-updated { color:var(--ink); }
+.privacy-heading .policy-updated { font-size:20px; font-weight:700; }
+.privacy-heading .mini-label { font-size:18px; }
+.privacy-image-slot { background:var(--cream); border-color:var(--ink); }
+.privacy-page { padding-top:54px; }
+.policy-toc { padding:0; border:2px solid var(--ink); border-radius:16px; overflow:hidden; }
+.policy-toc h2 {
+  margin:0; padding:20px 22px;
+  background:var(--mustard); color:var(--ink);
+  border-bottom:2px solid var(--ink);
+  font-family:'Darumadrop One','Nunito',sans-serif;
+}
+.policy-toc ol { margin:0; padding:20px 22px 22px 44px; font-size:20px; }
+.policy-toc a { color:var(--navy); text-decoration:underline; }
+.policy-toc a:hover { color:var(--ink); text-decoration-thickness:2px; }
+.policy-item { border-bottom:2px solid var(--sage); }
+.policy-number { background:var(--mustard); color:var(--ink); border:2px solid var(--ink); }
+.policy-item:nth-of-type(even) .policy-number { background:var(--button-terracotta); }
+@media (max-width:767px) {
+  .privacy-heading { padding-top:24px; }
+  .privacy-hero { padding:22px; border-radius:16px; }
+  .privacy-heading .mini-label,.privacy-heading .policy-updated { font-size:16px; }
+  .privacy-heading p { font-size:20px; overflow-wrap:anywhere; }
+  .privacy-image-slot { max-width:none; }
+  .privacy-page { padding-top:30px; }
+  .policy-toc h2 { padding:16px 20px; }
+  .policy-toc ol { font-size:18px; padding:14px 20px 18px 40px; }
+  .policy-item { margin-bottom:24px; }
+}
