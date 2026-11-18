@@ -586,7 +586,8 @@ body { font-size:var(--type-body); line-height:1.5; }
 .faq-item:last-child { border-bottom:0; }
 .faq-disclaimer,.contact-intro .social-note,.contact-form-panel .mini-label,.contact-form-panel .privacy-note,.contact-form-panel .form-feedback,.contact-form-panel label,.contact-form-panel input,.contact-form-panel textarea,.policy-toc ol,.privacy-heading .mini-label,.privacy-heading .policy-updated,.order-hint,.image-caption,.stock-label,.order-subtotal small,.product-bottom p,.site-footer h2,.site-footer a,.copyright { font-size:var(--type-support); line-height:1.5; }
 .contact-form-panel input,.contact-form-panel textarea { padding:.65rem .75rem; }
-.btn-primary-brand,.btn-secondary-brand,.product-card h3 { font-size:var(--type-action); }
+.btn-primary-brand,.btn-secondary-brand { font-size:var(--type-action); max-width:100%; white-space:normal; }
+.product-card h3 { font-size:1.5rem; }
 .product-card-link,.product-bottom a { font-size:var(--type-support); }
 .hero-copy p:not(.eyebrow):not(.hero-tagline) { max-width:unset; margin-bottom:1rem; }
 .hero-copy p:not(.eyebrow):has(+ .btn-large) { margin-bottom:1.5rem; }
@@ -599,8 +600,19 @@ body { font-size:var(--type-body); line-height:1.5; }
   .hero-grid { width:100%; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); align-items:center; }
   .hero-art { aspect-ratio:1/1; max-height:none; }
 }
-@media (max-width:1050px) {
+@media (max-width:1200px) {
   :root { --type-h1:3.25rem; --type-h2:2.125rem; --type-eyebrow:1.875rem; --type-body:1.25rem; --type-action:1.25rem; }
+  .featured-layout { grid-template-columns:minmax(0,1fr); }
+  .brand-story { border-left:0; border-top:1px solid var(--sage); padding:1.5rem 0 0; }
+}
+@media (min-width:1051px) and (max-height:800px) {
+  .hero-section { padding-block:clamp(1rem,2.8vh,2rem); }
+  .hero-copy h1 { margin-bottom:.75rem; line-height:1.1; }
+  .hero-copy .eyebrow { margin-bottom:.7rem; }
+  .hero-copy p:not(.eyebrow):not(.hero-tagline) { line-height:1.4; margin-bottom:.65rem; }
+  .hero-copy p:not(.eyebrow):has(+ .btn-large) { margin-bottom:1rem; }
+}
+@media (max-width:1050px) {
   .hero-grid { display:grid; grid-template-columns:minmax(0,1fr); }
   .hero-grid > div { width:100%; min-width:0; }
   .hero-copy { padding-right:0; }
