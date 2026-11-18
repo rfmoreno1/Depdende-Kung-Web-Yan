@@ -34,17 +34,22 @@ Use the official five-page assignment brief and progress report template for sub
 
 | Foreground and background | Ratio | Normal-text AA decision |
 | --- | ---: | --- |
-| Navy #344454 / cream #f3eada | 8.37:1 | Pass: navigation, footer and secondary button |
-| Navy / paper #fffdf8 | 9.83:1 | Pass: body text and headings |
-| Accessible ink #243442 / mustard #d3a54d | 5.63:1 | Pass: primary button and selected size |
+| Navy #344454 / cream #f3eada | 8.37:1 | Pass: body text and headings |
+| Even darker navy #1d262f / sage #819477 | 4.69:1 | Pass: navigation and footer |
+| Even darker navy / mustard #d3a54d | 6.75:1 | Pass: featured shirts and selected size |
+| Even darker navy / original terracotta #c4754c | 4.37:1 | Fail for normal text |
+| Even darker navy / accessible terracotta #cc7b52 | 4.75:1 | Pass: all action buttons |
 | Cream / mustard | 1.90:1 | Fail: do not use for text |
 | Navy / mustard | 4.41:1 | Fail for normal text: use accessible ink |
 | Navy / white | 10.00:1 | Pass: input boundaries and text |
 | Muted #52677a / white | 5.87:1 | Pass: placeholder text |
-| Sage #819477 / navy | 3.06:1 | Pass for non-text dividers; not normal text |
+| Sage #819477 / navy | 3.06:1 | Fail for normal text; use even darker navy |
+| Cream / sage | 2.73:1 | Fail for normal text |
 | Cream / terracotta #c4754c | 2.93:1 | Fail: keep terracotta decorative |
 
 Reference: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html
+
+The actual Canva brand palette remains unchanged. Two interface-only variants are documented in Figma: #1D262F (even darker navy) and #CC7B52 (slightly lighter terracotta). Darkening the button background would reduce contrast with dark text. Ratios are truncated to two decimals, as in WebAIM's display. Desktop type uses Nunito 30px navigation, Darumadrop One 64px H1, 40px H2, Nunito 24px body and 20px footer; smaller screens adapt those sizes.
 
 ## Brand assets
 
