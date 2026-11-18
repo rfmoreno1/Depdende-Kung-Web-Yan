@@ -546,3 +546,22 @@ button:disabled { opacity:.65; cursor:not-allowed; }
   *,*::before,*::after { animation:none!important; transition:none!important; }
   .btn-primary-brand:hover,.btn-secondary-brand:hover { transform:none; }
 }
+
+/* Preserve the complete original message, with a compact desktop hero.
+   The mobile layout remains in normal document flow and can grow with text. */
+.hero-copy .hero-tagline { font-size:1.25rem; margin:.75rem 0 1rem; }
+.hero-copy p:not(.eyebrow):not(.hero-tagline) { max-width:44rem; }
+.contact-form-panel .mini-label { font-size:1rem; letter-spacing:0; line-height:1.4; font-weight:700; }
+@media (min-width:1051px) {
+  .hero-section { padding-block:1.5rem; }
+  .hero-grid { display:grid; grid-template-columns:minmax(0, 1.65fr) minmax(0,1fr); gap:1.5rem; }
+  .hero-grid > div { width:100%; padding:0; min-width:0; }
+  .hero-copy h1 { font-size:3.5rem; line-height:1.08; margin-bottom:.85rem; }
+  .hero-copy p:not(.eyebrow):not(.hero-tagline) { font-size:1.25rem; line-height:1.4; margin-bottom:.75rem; }
+  .hero-copy .hero-tagline { margin:.75rem 0 1rem; }
+  .hero-copy .btn-large { padding:.65rem 1.5rem; min-height:54px; }
+  .hero-art { aspect-ratio:4/5; max-height:30rem; }
+  .product-info h1 { font-size:2.75rem; line-height:1.15; margin-bottom:.5rem; }
+}
+@media (min-width:1500px) { .product-info h1 { font-size:3rem; } }
+@media (max-width:767px) { .hero-copy .hero-tagline { font-size:1.125rem; } }
