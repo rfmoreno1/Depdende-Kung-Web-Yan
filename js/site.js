@@ -21,6 +21,20 @@
   }
   if (page === 'privacy') {
     document.querySelectorAll('[data-nav]').forEach(a => a.removeAttribute('aria-current'));
+    // Desktop shows the full policy; small screens start with collapsed sections.
+    const mobilePolicy = window.matchMedia('(max-width: 767px)');
+    const policySections = document.querySelectorAll('details.policy-item');
+    function setPolicyLayout() {
+      policySections.forEach(section => { section.open = !mobilePolicy.matches; });
+      const target = document.getElementById(location.hash.slice(1));
+      if (target && target.matches('details.policy-item')) target.open = true;
+    }
+    setPolicyLayout();
+    mobilePolicy.addEventListener('change', setPolicyLayout);
+    window.addEventListener('hashchange', () => {
+      const target = document.getElementById(location.hash.slice(1));
+      if (target && target.matches('details.policy-item')) target.open = true;
+    });
   }
   function openDraft(to, subject, body, feedback) {
     const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
