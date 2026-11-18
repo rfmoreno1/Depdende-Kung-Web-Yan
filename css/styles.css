@@ -758,3 +758,12 @@ body { font-size:var(--type-body); line-height:1.5; }
   white-space:normal;
   overflow-wrap:normal;
 }
+
+/* Fit the longest product name to the available column, without clipping
+   or sacrificing the shared brand heading hierarchy on narrow devices. */
+.product-heading h1 {
+  font-size:clamp(1.375rem,9cqi,var(--type-h1));
+  letter-spacing:0;
+  white-space:normal;
+  overflow-wrap:normal;
+}
