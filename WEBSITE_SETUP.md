@@ -14,7 +14,7 @@ Open `index.html` in Chrome or use VS Code Live Server. Internet access is requi
 | do-good-work.html | Do Good Work Tee |
 | contact.html | Contact form and FAQ |
 | privacy.html | Privacy policy with numbered sections and contents links |
-| css/styles.css | Shared layout, responsive design, official colors, fonts and buttons |
+| css/styles.css | Shared layout, responsive design, official colors, fonts and buttons; final revised palette block is at the bottom |
 | js/site.js | Mobile navigation, form validation, sizes/quantity, subtotal and email drafts |
 | images/ | Team's original exported logo variants, icon sheets and temporary product placeholder |
 | assignment-checklist.md | Rubric checklist, accessibility and remaining work |
@@ -22,6 +22,10 @@ Open `index.html` in Chrome or use VS Code Live Server. Internet access is requi
 ### Bootstrap concepts
 
 Every page links the same CDN CSS and JavaScript. The shared navbar, `container`, `row`, `md:col-6`, `g-7`, `card`, `btn-solid theme-primary`, `form-control` and flex utilities organize the page. Custom CSS is linked afterwards so the approved colors and typography override the defaults. The responsive columns stack on small screens (Module 6.1).
+
+### Revised color choices
+
+The header, mobile menu and footer use sage #819477 with even darker navy #1D262F. Cream #F3EADA and brand navy #344454 are the body colors. Featured cards use mustard #D3A54D. Buttons use accessible terracotta #CC7B52 with #1D262F text (4.75:1); the original #C4754C is preserved as a brand accent. The two non-palette shades are recorded as accessibility alternatives in Figma. Do not make the header black or change it based on the operating system theme.
 
 ### Replace the image placeholders
 
