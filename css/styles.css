@@ -296,8 +296,20 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
 .order-hint,.privacy-note,.image-caption { font-size:20px; color:var(--navy); }
 .order-subtotal { font-size:24px; }
 .mini-label { color:var(--navy); }
+
+/* Official Canva iconography, adapted to the accessible cream/navy palette.
+   Icons accompany text instead of replacing it. */
+.brand-icon { display:inline-block; flex:0 0 auto; width:32px; height:32px; background:none; object-fit:contain; vertical-align:middle; }
+.site-header .nav-links a { display:inline-flex; align-items:center; gap:8px; }
+.site-header .nav-links { gap:clamp(15px,2.5vw,36px); }
+.btn-primary-brand .brand-icon,.btn-secondary-brand .brand-icon { width:34px; height:34px; }
+.site-footer .brand-icon { width:24px; height:24px; margin-right:5px; }
+.product-card-link { text-transform:none; }
+.contact-badge .brand-icon { width:36px; height:36px; }
 @media (max-width:1050px) {
   .site-header .nav-links a { font-size:22px; }
+  .site-header .nav-links { gap:14px; }
+  .site-header .nav-links .brand-icon { width:26px; height:26px; }
   .hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:52px; }
   .eyebrow { font-size:30px; }
   .hero-copy p:not(.eyebrow):not(.hero-tagline),.product-description,.brand-story p,.contact-intro p,.contact-form-panel p,.policy-item p { font-size:20px; }
@@ -306,6 +318,7 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
   body { font-size:20px; }
   .site-header .nav-links { background:var(--sage); }
   .site-header .nav-links a { font-size:20px; }
+  .site-header .nav-links a { display:flex; gap:10px; }
   .hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:clamp(36px,10vw,48px); }
   .section-heading,.brand-story h2,.contact-form-panel h2,.faq-section>h2,.contact-social h2,.privacy-heading h2,.policy-item h2 { font-size:30px; }
   .eyebrow { font-size:24px; }
