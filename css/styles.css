@@ -257,7 +257,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* Revised palette and type scale. Keep this block after Bootstrap and all
    layout rules so its navbar background cannot be overridden by Bootstrap. */
-body { background: var(--cream); color:var(--navy); font-size:24px; line-height:1.45; }
+body { background: var(--cream); color:var(--navy); font-size:1.5rem; line-height:1.45; }
 .site-header, .site-header .site-nav, .site-header .navbar, .site-header .nav-inner {
   background-color:var(--sage) !important;
   color:var(--ink);
@@ -267,24 +267,24 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
   --bs-navbar-active-color:var(--ink);
 }
 .site-header .nav-links, .site-header .nav-links a { color:var(--ink); }
-.site-header .nav-links a { font-family:'Nunito',Arial,sans-serif; font-size:30px; font-weight:700; }
+.site-header .nav-links a { font-family:'Nunito',Arial,sans-serif; font-size:1.875rem; font-weight:700; }
 .site-header .nav-links a:hover, .site-header .nav-links a[aria-current=page] { color:var(--ink); border-bottom-color:var(--ink); }
 .site-header .nav-toggle { color:var(--ink); border-color:var(--ink); background:var(--sage); }
-.hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:64px; color:var(--navy); line-height:1.15; }
-.section-heading,.brand-story h2,.contact-form-panel h2,.faq-section>h2,.contact-social h2,.privacy-heading h2,.policy-item h2 { font-size:40px; font-weight:400; }
-.eyebrow { font-size:40px; font-weight:400; letter-spacing:0; line-height:1.2; }
-.hero-copy p:not(.eyebrow):not(.hero-tagline),.product-description,.brand-story p,.contact-intro p,.contact-form-panel p,.policy-item p { font-size:24px; color:var(--navy); }
-.hero-tagline { font-size:24px; }
+.hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:4rem; color:var(--navy); line-height:1.15; }
+.section-heading,.brand-story h2,.contact-form-panel h2,.faq-section>h2,.contact-social h2,.privacy-heading h2,.policy-item h2 { font-size:2.5rem; font-weight:400; }
+.eyebrow { font-size:2.5rem; font-weight:400; letter-spacing:0; line-height:1.2; }
+.hero-copy p:not(.eyebrow):not(.hero-tagline),.product-description,.brand-story p,.contact-intro p,.contact-form-panel p,.policy-item p { font-size:1.5rem; color:var(--navy); }
+.hero-tagline { font-size:1.5rem; }
 .btn-primary-brand,.btn-secondary-brand { background:var(--button-terracotta); color:var(--ink); border:2px solid var(--ink); }
 .btn-primary-brand:hover,.btn-secondary-brand:hover { background:#d58a63; color:var(--ink); border-color:var(--ink); }
 .product-card { background:var(--mustard); color:var(--ink); }
 .product-card h3,.product-card-link,.product-card-link:hover,.product-card .price-small { color:var(--ink); }
-.product-card h3 { font-size:24px; }
-.product-card-link { font-size:20px; }
-.site-footer { background:var(--sage); color:var(--ink); font:400 20px 'Nunito',Arial,sans-serif; border-top:3px solid var(--ink); }
-.site-footer h2,.site-footer a { color:var(--ink); font-family:'Nunito',Arial,sans-serif; font-size:20px; }
+.product-card h3 { font-size:1.5rem; }
+.product-card-link { font-size:1.25rem; }
+.site-footer { background:var(--sage); color:var(--ink); font:400 1.25rem 'Nunito',Arial,sans-serif; border-top:3px solid var(--ink); }
+.site-footer h2,.site-footer a { color:var(--ink); font-family:'Nunito',Arial,sans-serif; font-size:1.25rem; }
 .site-footer h2 { font-weight:700; }
-.copyright { font-size:20px; }
+.copyright { font-size:1.25rem; }
 .contact-form-panel,.policy-toc { border:2px solid var(--navy); background:var(--cream); }
 .contact-form-panel input,.contact-form-panel textarea { color:var(--navy); }
 .faq-section,.faq-section>h2 { background:var(--cream); color:var(--navy); }
@@ -292,9 +292,9 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
 .faq-section>h2 { border-bottom-color:var(--navy); }
 .faq-item,.policy-item { border-color:var(--navy); }
 .site-footer a:focus-visible,.site-header a:focus-visible,.faq-item summary:focus-visible { outline-color:var(--ink); }
-.policy-toc h2 { font-size:28px; }
-.order-hint,.privacy-note,.image-caption { font-size:20px; color:var(--navy); }
-.order-subtotal { font-size:24px; }
+.policy-toc h2 { font-size:1.75rem; }
+.order-hint,.privacy-note,.image-caption { font-size:1.25rem; color:var(--navy); }
+.order-subtotal { font-size:1.5rem; }
 .mini-label { color:var(--navy); }
 
 /* Official Canva iconography, adapted to the accessible cream/navy palette.
@@ -307,25 +307,25 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
 .product-card-link { text-transform:none; }
 .contact-badge .brand-icon { width:36px; height:36px; }
 @media (max-width:1050px) {
-  .site-header .nav-links a { font-size:22px; }
+  .site-header .nav-links a { font-size:1.375rem; }
   .site-header .nav-links { gap:14px; }
   .site-header .nav-links .brand-icon { width:26px; height:26px; }
-  .hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:52px; }
-  .eyebrow { font-size:30px; }
-  .hero-copy p:not(.eyebrow):not(.hero-tagline),.product-description,.brand-story p,.contact-intro p,.contact-form-panel p,.policy-item p { font-size:20px; }
+  .hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:3.25rem; }
+  .eyebrow { font-size:1.875rem; }
+  .hero-copy p:not(.eyebrow):not(.hero-tagline),.product-description,.brand-story p,.contact-intro p,.contact-form-panel p,.policy-item p { font-size:1.25rem; }
 }
 @media (max-width:767px) {
-  body { font-size:20px; }
+  body { font-size:1.25rem; }
   .site-header .nav-links { background:var(--sage); }
-  .site-header .nav-links a { font-size:20px; }
+  .site-header .nav-links a { font-size:1.25rem; }
   .site-header .nav-links a { display:flex; gap:10px; }
-  .hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:clamp(36px,10vw,48px); }
-  .section-heading,.brand-story h2,.contact-form-panel h2,.faq-section>h2,.contact-social h2,.privacy-heading h2,.policy-item h2 { font-size:30px; }
-  .eyebrow { font-size:24px; }
-  .hero-tagline { font-size:20px; }
-  .site-footer,.site-footer h2,.site-footer a,.copyright { font-size:16px; }
-  .order-hint,.privacy-note,.image-caption { font-size:16px; }
-  .product-card-link { font-size:18px; }
+  .hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:clamp(2.25rem,10vw,3rem); }
+  .section-heading,.brand-story h2,.contact-form-panel h2,.faq-section>h2,.contact-social h2,.privacy-heading h2,.policy-item h2 { font-size:1.875rem; }
+  .eyebrow { font-size:1.5rem; }
+  .hero-tagline { font-size:1.25rem; }
+  .site-footer,.site-footer h2,.site-footer a,.copyright { font-size:1rem; }
+  .order-hint,.privacy-note,.image-caption { font-size:1rem; }
+  .product-card-link { font-size:1.125rem; }
 }
 
 /* Privacy policy: restore the two distinct panels from the wireframe.
@@ -340,8 +340,8 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
 }
 .privacy-heading h1,.privacy-heading h2,.privacy-heading p,
 .privacy-heading a,.privacy-heading .policy-updated { color:var(--ink); }
-.privacy-heading .policy-updated { font-size:20px; font-weight:700; }
-.privacy-heading .mini-label { font-size:18px; }
+.privacy-heading .policy-updated { font-size:1.25rem; font-weight:700; }
+.privacy-heading .mini-label { font-size:1.125rem; }
 .privacy-image-slot { background:var(--cream); border-color:var(--ink); }
 .privacy-page { padding-top:54px; }
 .policy-toc { padding:0; border:2px solid var(--ink); border-radius:16px; overflow:hidden; }
@@ -351,7 +351,7 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
   border-bottom:2px solid var(--ink);
   font-family:'Darumadrop One','Nunito',sans-serif;
 }
-.policy-toc ol { margin:0; padding:20px 22px 22px 44px; font-size:20px; }
+.policy-toc ol { margin:0; padding:20px 22px 22px 44px; font-size:1.25rem; }
 .policy-toc a { color:var(--navy); text-decoration:underline; }
 .policy-toc a:hover { color:var(--ink); text-decoration-thickness:2px; }
 .policy-item { border-bottom:2px solid var(--sage); }
@@ -359,12 +359,12 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
 @media (max-width:767px) {
   .privacy-heading { padding-top:24px; }
   .privacy-hero { padding:22px; border-radius:16px; }
-  .privacy-heading .mini-label,.privacy-heading .policy-updated { font-size:16px; }
-  .privacy-heading p { font-size:20px; overflow-wrap:anywhere; }
+  .privacy-heading .mini-label,.privacy-heading .policy-updated { font-size:1rem; }
+  .privacy-heading p { font-size:1.25rem; overflow-wrap:anywhere; }
   .privacy-image-slot { max-width:none; }
   .privacy-page { padding-top:30px; }
   .policy-toc h2 { padding:16px 20px; }
-  .policy-toc ol { font-size:18px; padding:14px 20px 18px 40px; }
+  .policy-toc ol { font-size:1.125rem; padding:14px 20px 18px 40px; }
   .policy-item { margin-bottom:24px; }
 }
 
@@ -387,14 +387,10 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
 .policy-chevron { display:none; }
 .policy-item summary:focus-visible { outline-color:var(--ink); }
 
-/* Cream price lettering on the mustard cards. A navy outline supplies
-   contrast without adding a background label or changing the card color. */
+/* Solid dark navy on mustard passes 6.76:1 without a badge or outline. */
 .product-card .price-small {
-  background:transparent; color:var(--cream); font-weight:800;
-  font-size:24px; line-height:1.3; padding:0; border-radius:0;
-  -webkit-text-stroke:2px var(--navy); paint-order:stroke fill;
-  text-shadow:1px 0 var(--navy), -1px 0 var(--navy),
-    0 1px var(--navy), 0 -1px var(--navy);
+  background:transparent; color:var(--ink); font-weight:800;
+  font-size:1.75rem; line-height:1.3; padding:0; border-radius:0;
 }
 /* Individual product pages have a cream background, so keep prices navy. */
 .price-large { background:transparent; color:var(--navy); padding:0; font-weight:800; }
@@ -404,7 +400,7 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
 .social-profiles { display:flex; gap:18px; color:var(--navy); align-items:center; }
 .social-profiles span { display:block; width:34px; height:34px; }
 .social-profiles svg { width:100%; height:100%; }
-.contact-intro .social-note { font-size:16px; margin:5px 0 14px; }
+.contact-intro .social-note { font-size:1rem; margin:5px 0 14px; }
 .faq-section,.faq-section>h2 { background:var(--navy); color:var(--cream); }
 .faq-section>h2 { border-bottom-color:var(--cream); }
 .faq-item { border:0; padding:8px 0; }
@@ -438,7 +434,7 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
     padding:12px; background:var(--mustard); color:var(--ink);
     border:1px solid var(--ink); border-radius:8px; min-height:64px;
   }
-  .policy-item summary h2 { font-size:20px; line-height:1.2; color:var(--ink); }
+  .policy-item summary h2 { font-size:1.25rem; line-height:1.2; color:var(--ink); }
   .policy-item .policy-number {
     /* Dark terracotta keeps cream numbers readable (4.69:1). */
     background:#a05232; color:var(--cream);
@@ -450,7 +446,7 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
   }
   .policy-item[open] .policy-chevron { transform:rotate(225deg); margin-top:5px; }
   .policy-answer { margin:0; padding:14px 12px 18px; }
-  .policy-item p { font-size:18px; overflow-wrap:anywhere; }
+  .policy-item p { font-size:1.125rem; overflow-wrap:anywhere; }
   .contact-form-panel { margin-top:32px; }
 }
 
@@ -464,24 +460,89 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
   font-weight:700;
 }
 .btn-primary-brand,.btn-secondary-brand {
-  font-size:24px;
+  font-size:1.5rem;
   line-height:1.2;
   text-transform:uppercase;
   letter-spacing:normal;
 }
-.site-header .nav-toggle { font-size:20px; line-height:1.2; }
-.product-card-link,.product-bottom a { font-size:20px; text-transform:none; }
-.size-pill span,.quantity-control input { font-size:24px; }
+.site-header .nav-toggle { font-size:1.25rem; line-height:1.2; }
+.product-card-link,.product-bottom a { font-size:1.25rem; text-transform:none; }
+.size-pill span,.quantity-control input { font-size:1.5rem; }
 @media (max-width:767px) {
   .btn-primary-brand,.btn-secondary-brand {
-    font-size:20px;
+    font-size:1.25rem;
     padding-inline:16px;
   }
-  .product-card-link,.product-bottom a { font-size:18px; }
-  .size-pill span,.quantity-control input { font-size:20px; }
+  .product-card-link,.product-bottom a { font-size:1.125rem; }
+  .size-pill span,.quantity-control input { font-size:1.25rem; }
   .policy-item summary h2 {
     font-family:'Nunito',Arial,sans-serif;
-    font-size:18px;
+    font-size:1.125rem;
     font-weight:700;
   }
+}
+
+/* Accessible layout refinements: scalable text, visible focus, and generous targets. */
+html { scroll-padding-top:1rem; }
+main, .hero-copy, .product-info, .contact-social, .contact-form-panel .row > div { min-width:0; }
+body { overflow-wrap:anywhere; }
+.hero-section { padding-block:clamp(1.5rem,3vw,3rem); }
+.hero-copy { padding-right:clamp(1rem,3vw,3rem); }
+.hero-copy h1 { font-size:4rem; margin-bottom:1.25rem; line-height:1.08; }
+.hero-copy .eyebrow { font-size:1.5rem; font-weight:700; margin-bottom:.65rem; }
+.hero-copy p:not(.eyebrow):not(.hero-tagline) { font-size:1.375rem; line-height:1.5; margin-bottom:1rem; }
+.hero-art { min-height:0; max-height:28rem; aspect-ratio:5/4; }
+.hero-art img { min-height:0; max-height:none; width:100%; height:100%; object-fit:contain; }
+.product-card-image { display:block; border:2px dashed var(--navy); border-radius:9px; overflow:hidden; background:var(--cream); }
+.product-card-image img { width:100%; aspect-ratio:1; object-fit:contain; }
+.product-card .price-small { -webkit-text-stroke:0; text-shadow:none; }
+.price-large { font-size:2rem; }
+.product-card-link,.site-footer a,.policy-toc a,.product-bottom a { display:inline-flex; align-items:center; min-height:44px; }
+.product-card-link { justify-content:center; gap:.25rem; }
+.product-card-link:hover { text-decoration:underline; text-underline-offset:.2em; }
+.site-footer a { padding:.25rem 0; }
+.policy-toc { position:static; overflow:visible; }
+.policy-toc a { display:flex; }
+.policy-item summary,.faq-item summary,.quantity-control input,.nav-toggle,.nav-links a { min-height:44px; }
+.quantity-control { flex:0 1 auto; max-width:100%; }
+.quantity-control button { min-width:44px; min-height:44px; }
+.quantity-control input { width:3.5rem; max-width:40%; }
+.order-action-row,.product-bottom,.social-profiles { flex-wrap:wrap; }
+.order-button { min-width:0; }
+.size-pill span { min-width:44px; min-height:44px; }
+.contact-form-panel input,.contact-form-panel textarea { font-size:1.125rem; min-height:44px; }
+.contact-form-panel .form-feedback a { color:var(--ink); }
+button:disabled { opacity:.65; cursor:not-allowed; }
+:where(a,button,input,textarea,summary,[tabindex]):focus-visible,.size-pill input:focus-visible+span { outline:3px solid var(--ink); outline-offset:3px; box-shadow:0 0 0 3px var(--cream); }
+.faq-item summary:focus-visible { outline-color:var(--mustard); }
+.skip-link { top:auto; transform:translateY(-150%); }
+.skip-link:focus { top:.75rem; transform:none; }
+@media (max-width:1050px) {
+  .hero-copy h1 { font-size:3.25rem; }
+  .hero-copy p:not(.eyebrow):not(.hero-tagline) { font-size:1.25rem; }
+}
+@media (max-width:767px) {
+  .hero-copy { padding-right:0; }
+  .hero-copy h1 { font-size:2.5rem; }
+  .hero-art { margin-top:1.5rem; max-height:24rem; }
+  .hero-copy .eyebrow { font-size:1.25rem; }
+  .hero-copy p:not(.eyebrow):not(.hero-tagline) { font-size:1.125rem; }
+  .nav-inner { gap:.5rem; }
+  .product-card .price-small { font-size:1.5rem; }
+  .contact-form-panel { padding:1rem; }
+  .faq-section { padding:1rem; }
+  .faq-section>h2 { margin:-1rem -1rem 1rem; padding:1rem; }
+  .policy-item summary { grid-template-columns:2.25rem minmax(0,1fr) 1rem; gap:.5rem; }
+  .policy-item .policy-number { width:2.25rem; height:2.25rem; font-size:1.125rem; }
+}
+@media (max-width:365px) {
+  .hero-copy h1 { font-size:2.125rem; }
+  .site-header .brand { width:5.5rem; }
+  .site-header .brand img { width:7rem; height:7rem; }
+  .nav-toggle { padding:.5rem; }
+}
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*::before,*::after { animation:none!important; transition:none!important; }
+  .btn-primary-brand:hover,.btn-secondary-brand:hover { transform:none; }
 }
