@@ -12,7 +12,16 @@
       links.classList.remove('open'); toggle.setAttribute('aria-expanded','false');
     }));
     document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') { links.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); }
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+        toggle.focus();
+      }
+    });
+    // Reset the mobile menu when the viewport switches to desktop.
+    window.matchMedia('(max-width: 767px)').addEventListener('change', () => {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
     });
   }
   const page = document.body.dataset.page;
@@ -51,6 +60,8 @@
   function validateOrShow(form, status) {
     if (form.checkValidity()) return true;
     form.reportValidity();
+    const firstInvalid = form.querySelector(':invalid');
+    if (firstInvalid) firstInvalid.focus();
     if (status) status.textContent = 'Please complete the required fields correctly before continuing.';
     return false;
   }
