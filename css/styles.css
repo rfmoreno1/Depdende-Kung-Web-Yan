@@ -368,9 +368,9 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
   .policy-item { margin-bottom:24px; }
 }
 
-/* Wireframe refinements: full-width hero, desktop index and mobile accordion. */
-.privacy-heading { background:var(--button-terracotta); padding:36px 0; }
-.privacy-hero { background:transparent; border:0; border-radius:0; padding:0; }
+/* Privacy introduction: cream page with a simple sage divider. */
+.privacy-heading { background:transparent; padding:36px 0 0; }
+.privacy-hero { background:transparent; border:0; border-bottom:2px solid var(--sage); border-radius:0; padding:0 0 28px; }
 .policy-toc { background:var(--mustard); color:var(--ink); }
 .policy-toc h2 { background:transparent; border:0; padding-bottom:0; }
 .policy-toc ol { padding-top:12px; }
@@ -415,18 +415,19 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
 .contact-form-panel .two-fields { grid-template-columns:1fr; }
 
 @media (max-width:767px) {
-  .privacy-heading { padding:28px 0; }
-  .privacy-hero { padding:0; }
+  .privacy-heading { padding:28px 0 0; }
+  .privacy-hero { padding:0 0 24px; }
   .policy-toc { display:none; }
   .policy-item { border:0; margin:0 0 12px; padding:0; }
   .policy-item summary {
     grid-template-columns:38px minmax(0,1fr) 16px; gap:10px;
-    padding:12px; background:var(--button-terracotta); color:var(--ink);
+    padding:12px; background:var(--mustard); color:var(--ink);
     border:1px solid var(--ink); border-radius:8px; min-height:64px;
   }
   .policy-item summary h2 { font-size:20px; line-height:1.2; color:var(--ink); }
   .policy-item .policy-number {
-    background:var(--ink); color:var(--button-terracotta);
+    /* Dark terracotta keeps cream numbers readable (4.69:1). */
+    background:#a05232; color:var(--cream);
     border:0; width:36px; height:36px;
   }
   .policy-chevron {
