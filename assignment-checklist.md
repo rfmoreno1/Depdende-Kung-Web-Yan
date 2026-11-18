@@ -63,7 +63,7 @@ Official Figma Brand kit nodes: cat mark 8:38, stacked color 8:46, compact color
 - Contact's required-field validation, a FAQ disclosure, and the privacy contents anchor worked in the published site.
 - Source checks verified 93 local links, 14 image references, a unique H1 per page, and matching label IDs. JavaScript syntax and four draft-generation logic tests passed (no email was sent).
 - Desktop homepage appearance reviewed. Tablet/mobile visual and keyboard checks, CDN verification across devices, and actual email-app handoff still need team testing.
-- Revised source checked for all six pages: 95 link references (local targets and anchors checked), 14 images with nonempty alt text, single H1 and matching form label IDs. All six pages opened on GitHub Pages, and the new homepage and privacy placeholder descriptions were confirmed in the browser accessibility tree. The latest stylesheet refresh was committed, but deployment was still serving older cached styles during review.
+- Revised source checked for all six pages: 95 link references (local targets and anchors checked), 14 images with nonempty alt text, single H1 and matching form label IDs. All six pages opened on GitHub Pages, and the homepage and privacy placeholder descriptions were confirmed in the browser accessibility tree. On 18 November 2026 the new sage stylesheet was loaded on all six live pages; computed header and footer colors were #819477 and body backgrounds were #F3EADA. The homepage navigation was visually checked. [Figma accessibility color changes](https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=584-261).
 
 ### Remaining checks after final artwork is added
 
