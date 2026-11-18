@@ -411,7 +411,21 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
 .faq-item summary { padding:5px 0; }
 .faq-item p { color:var(--cream); margin-top:0; }
 .faq-item summary:focus-visible { outline-color:var(--mustard); }
-.contact-form-panel { margin:42px auto 0; max-width:1160px; }
+.contact-form-panel {
+  margin:42px auto 0; max-width:1160px;
+  /* Mustard panel with darker navy text: 6.76:1 contrast. */
+  background:var(--mustard); color:var(--ink); border-color:var(--ink);
+}
+.contact-form-panel h2,.contact-form-panel p,.contact-form-panel label,
+.contact-form-panel .mini-label,.contact-form-panel .privacy-note,
+.contact-form-panel .form-feedback { color:var(--ink); }
+.contact-form-panel input,.contact-form-panel textarea {
+  background:#fff; border-color:var(--ink); color:var(--ink);
+}
+.contact-form-panel input::placeholder,.contact-form-panel textarea::placeholder {
+  color:var(--navy); opacity:1;
+}
+.contact-form-panel :focus-visible { outline-color:var(--ink); }
 .contact-form-panel .two-fields { grid-template-columns:1fr; }
 
 @media (max-width:767px) {
