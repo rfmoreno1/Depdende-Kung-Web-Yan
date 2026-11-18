@@ -150,6 +150,7 @@ h1,h2,h3,p{margin-top:0}
 }
 body { color: var(--navy); background: var(--paper); display:flex; flex-direction:column; min-height:100vh; }
 main { flex:1; }
+h1,h2,h3 { font-family:'Darumadrop One','Nunito',sans-serif; font-weight:400; }
 .row { margin-inline:0; }
 .visually-hidden { position:absolute!important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 .site-header { background: var(--cream); border-bottom: 3px solid var(--mustard); }
@@ -157,30 +158,32 @@ main { flex:1; }
 .brand img { position:absolute; width:180px; height:180px; max-width:none; object-fit:contain; left:50%; top:50%; transform:translate(-50%,-50%); }
 .nav-links a { color:var(--navy); }
 .nav-links { flex-direction:row; }
-.nav-links a:hover, .nav-links a[aria-current=page] { color:var(--navy); border-bottom-color:var(--terracotta); }
+.nav-links a:hover, .nav-links a[aria-current=page] { color:var(--navy); border-bottom-color:var(--navy); }
 .hero-copy h1, .product-info h1, .contact-intro h1, .privacy-heading h1 { color:var(--navy); }
 .eyebrow { color:var(--navy); font-size:1.15rem; letter-spacing:.12em; }
-.hero-art { border: 5px solid var(--cream); background:var(--cream); }
-.hero-art img { object-fit:contain; }
+.hero-art { border: 2px dashed var(--navy); background:var(--cream); }
+.hero-art img { object-fit:cover; }
 .hero-tagline { color:var(--navy); }
-.btn-primary-brand { background:var(--mustard); color:var(--ink); border:2px solid var(--mustard); }
+.btn-primary-brand { background:var(--mustard); color:var(--ink); border:2px solid var(--navy); }
 .btn-primary-brand:hover { color:var(--ink); background:#e0b96b; border-color:var(--ink); }
-.btn-secondary-brand { background:var(--cream); color:var(--navy); border:2px solid var(--cream); }
+.btn-secondary-brand { background:var(--cream); color:var(--navy); border:2px solid var(--navy); }
 .btn-secondary-brand:hover { color:var(--navy); background:#e5d4b6; border-color:var(--navy); }
 .brand-icon { display:inline-block; flex:none; width:32px; height:32px; background-image:url("../images/icons-sage.png"); background-size:110px 110px; background-repeat:no-repeat; }
 .shop-icon { background-position:-39px -20px; }
 .info-icon { background-position:-2px -57px; }
 .phone-icon { background-position:-76px -20px; }
 .section-divider { background:var(--sage); }
-.section-heading { color:var(--navy); }
+.section-heading { color:var(--navy); font-weight:400; }
 .product-card { background:var(--navy); border:0; color:var(--cream); }
 .product-card h3,.product-card-link,.product-card-link:hover { color:var(--cream); }
-.product-card>a { background:var(--cream); }
+.product-card h3 { font-family:'Darumadrop One','Nunito',sans-serif; font-weight:400; font-size:1.22rem; }
+.product-card>a { background:var(--cream); border:2px dashed var(--navy); }
 .product-card>a img { object-fit:contain; }
 .brand-story { border-color:var(--sage); }
 .brand-story h2 { color:var(--navy); }
 .site-footer { background:var(--navy); color:var(--cream); border-top:5px solid var(--sage); }
 .site-footer h2,.site-footer a { color:var(--cream); }
+.site-footer h2 { font-weight:400; }
 .site-footer a { display:inline-block; padding:3px 0; }
 .contact-badge { display:flex; align-items:center; gap:12px; font-size:1.35rem; margin:0 0 15px; }
 .contact-form-panel { border-top:5px solid var(--mustard); }
@@ -188,18 +191,22 @@ main { flex:1; }
 .faq-item { border-color:#819477; }
 .faq-item summary { min-height:44px; display:list-item; padding:9px 0; }
 .faq-disclaimer { opacity:1; }
-.main-product-image { border:4px solid var(--cream); }
+.main-product-image { background:var(--cream); border:2px dashed var(--navy); }
 .main-product-image img { object-fit:contain; }
 .image-caption { color:var(--navy); font-size:1rem; padding-top:12px; }
-.size-pill span { background:var(--cream); color:var(--navy); border-color:var(--sage); border-radius:8px; }
+.size-pill span { background:var(--cream); color:var(--navy); border-color:var(--navy); border-radius:8px; }
 .size-pill:hover span { background:#e2e7d9; }
 .size-pill input:checked+span { border-color:var(--navy); background:var(--mustard); color:var(--ink); box-shadow:inset 0 0 0 2px var(--navy); }
-.quantity-control { background:var(--cream); }
+.quantity-control { background:var(--cream); border:2px solid var(--navy); }
+.contact-form-panel input,.contact-form-panel textarea { border-color:var(--navy); }
+.contact-form-panel input::placeholder,.contact-form-panel textarea::placeholder { color:#52677a; opacity:1; }
 .order-subtotal { color:var(--navy); margin:18px 0 0; }
 .order-subtotal small { font-size:.9rem; }
 .order-hint { margin-top:12px; }
 .privacy-heading { background:var(--cream); padding:35px 0; }
-.privacy-hero { display:grid; grid-template-columns:minmax(0, 1fr) 220px; gap:36px; align-items:center; }
+.privacy-hero { display:grid; grid-template-columns:minmax(0, 1fr) minmax(220px, 320px); gap:36px; align-items:center; }
+.privacy-image-slot { width:100%; aspect-ratio:16/11; border:2px dashed var(--navy); border-radius:12px; overflow:hidden; background:var(--cream); }
+.privacy-image-slot img { width:100%; height:100%; object-fit:cover; }
 .privacy-heading h1 { font-family:'Darumadrop One','Nunito',sans-serif; font-size:clamp(3rem,5vw,5rem); font-weight:400; margin:12px 0 2px; }
 .privacy-heading h2 { font-family:'Darumadrop One','Nunito',sans-serif; font-size:1.9rem; margin:0 0 10px; }
 .privacy-heading p { max-width:770px; }
@@ -207,13 +214,13 @@ main { flex:1; }
 .privacy-page { padding-top:45px; }
 .privacy-intro { grid-template-columns:minmax(210px, 26%) minmax(0, 1fr); gap:45px; }
 .policy-toc { align-self:start; position:sticky; top:20px; background:var(--cream); border-radius:12px; border-left:5px solid var(--sage); padding:24px 20px; }
-.policy-toc h2 { font-size:1.2rem; font-weight:800; }
+.policy-toc h2 { font-size:1.35rem; font-weight:400; }
 .policy-toc ol { padding-left:22px; margin:0; }
 .policy-toc li { padding:4px 0; }
 .policy-toc a { display:inline-block; padding:4px 0; text-underline-offset:3px; }
 .policy-item { border-color:var(--sage); scroll-margin-top:18px; }
 .policy-number { background:var(--navy); color:var(--cream); }
-.policy-item h2 { color:var(--navy); }
+.policy-item h2 { color:var(--navy); font-weight:400; }
 .policy-item a { overflow-wrap:anywhere; }
 .form-feedback { color:var(--navy); }
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible, .size-pill input:focus-visible+span {
@@ -232,7 +239,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .site-header .brand img { width:140px; height:140px; }
   .nav-links { background:var(--cream); flex-direction:column; }
   .privacy-hero { display:block; }
-  .privacy-hero img { display:none; }
+  .privacy-image-slot { max-width:320px; margin-top:24px; }
   .privacy-intro { grid-template-columns:1fr; }
   .policy-toc { position:static; }
   .product-info { padding-left:0; }

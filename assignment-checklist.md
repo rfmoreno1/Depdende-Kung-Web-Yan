@@ -6,10 +6,10 @@ Use the official five-page assignment brief and progress report template for sub
 
 | Item | Status | Evidence or remaining task |
 | --- | --- | --- |
-| 1a–1d: Four unique desktop visual mockups | Needs final design work | Existing Figma desktop and mobile mockups are mid-fidelity. Apply the approved colors, real T-shirt artwork, and contact form to a separate final mockup set. Place each beside its original wireframe. |
+| 1a–1d: Four unique desktop visual mockups | Six branded desktop designs created | Separate editable Figma frames in [Final Branded Mockups](https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=575-55). Original mockups remain intact. Add approved artwork and pair each with its wireframe for documentation. |
 | 1e: Wireframe-to-mockup alignment | Needs team documentation | Note changes to button contrast, privacy contents navigation, contact form, product sizes/quantity and placeholders. Explain why each change is necessary. |
 | 2a–2d: Six Bootstrap webpages | Implemented | Home, contact, privacy and three individual product pages. HTML5, viewport, titles, semantic sections, shared navigation, links and footer. |
-| Real product artwork | Blocked on artwork | The Figma product and home image slots are still gray placeholders. Replace with the three approved shirt images before submission. |
+| Real product artwork | Blocked on artwork | Product slots are empty cream placeholders. Homepage hero and privacy illustration slots are deliberately empty; neither contains a shirt or substitute logo. Replace with approved artwork when available. |
 | Brand kit | Applied to website | Canva and Figma confirm Darumadrop One, Nunito, navy, mustard, terracotta, sage and cream. Official logo and icon assets exported from Figma. |
 | Figma Code Layer | Source imported | Separate Code Layer 564:390 on the Visual Mockup page. The original frames are unchanged. Open the layer to initialize its preview; preview rendering is not yet verified. |
 | GitHub Pages | Six pages verified live | https://rfmoreno1.github.io/Depdende-Kung-Web-Yan/ |
@@ -21,14 +21,30 @@ Use the official five-page assignment brief and progress report template for sub
 
 ## Accessibility checklist (Module 4.1)
 
-- Contrast: navy #344454 on cream #f3eada = 8.37:1. Dark ink #243442 on mustard #d3a54d is used instead of the original cream text for accessible primary buttons. Cream on mustard is only about 1.90:1.
-- Text alternatives: descriptive alt text on every meaningful HTML image; decorative icons hidden from assistive technology.
+- Contrast: the tested pairs below follow WCAG 2.2 AA (4.5:1 for normal text, 3:1 for large text and meaningful control boundaries). No claim of full WCAG conformance is made.
+- Text alternatives: descriptive alt text on every meaningful HTML image, including pending visual slots; decorative icons hidden from assistive technology. When an image is added, replace its placeholder alt text with an accurate description of the actual image.
 - Keyboard and visible focus: tab through links, form inputs, size options, quantity buttons and FAQ summaries; Escape closes the mobile nav.
 - Forms: each input has a label; required fields are validated; the status area explains how to send the prepared draft.
 - Consistency and reading order: same navbar/footer on every page; semantic header, nav, main and footer; one h1 per page; ordered headings.
 - Color alone: selected size has a strong border in addition to color; errors contain text.
 - Readability and tap targets: responsive grid and wrapping, rem sizes, buttons at least 44px tall; test zoom and final images.
 - Captions/transcripts: not applicable unless the team adds audio or video.
+
+### Brand color contrast audit
+
+| Foreground and background | Ratio | Normal-text AA decision |
+| --- | ---: | --- |
+| Navy #344454 / cream #f3eada | 8.37:1 | Pass: navigation, footer and secondary button |
+| Navy / paper #fffdf8 | 9.83:1 | Pass: body text and headings |
+| Accessible ink #243442 / mustard #d3a54d | 5.63:1 | Pass: primary button and selected size |
+| Cream / mustard | 1.90:1 | Fail: do not use for text |
+| Navy / mustard | 4.41:1 | Fail for normal text: use accessible ink |
+| Navy / white | 10.00:1 | Pass: input boundaries and text |
+| Muted #52677a / white | 5.87:1 | Pass: placeholder text |
+| Sage #819477 / navy | 3.06:1 | Pass for non-text dividers; not normal text |
+| Cream / terracotta #c4754c | 2.93:1 | Fail: keep terracotta decorative |
+
+Reference: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html
 
 ## Brand assets
 

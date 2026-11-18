@@ -23,9 +23,9 @@ Open `index.html` in Chrome or use VS Code Live Server. Internet access is requi
 
 Every page links the same CDN CSS and JavaScript. The shared navbar, `container`, `row`, `md:col-6`, `g-7`, `card`, `btn-solid theme-primary`, `form-control` and flex utilities organize the page. Custom CSS is linked afterwards so the approved colors and typography override the defaults. The responsive columns stack on small screens (Module 6.1).
 
-### Replace the product photos
+### Replace the image placeholders
 
-The approved product artwork is not present in the Figma mockups yet; the current image makes that clear. When artwork is ready, save the three files to `images/` (for example, `dont-be-late.png`, `everyday-comfort.png` and `do-good-work.png`). Update each matching `src`, `alt` and image caption in the relevant product page and Home cards. Also replace the hero placeholder with the approved hero artwork.
+The approved product artwork is not present in the mockups yet. When artwork is ready, save the three files to `images/` (for example, `dont-be-late.png`, `everyday-comfort.png` and `do-good-work.png`). Update each matching `src`, `alt` and image caption in the relevant product page and Home cards. The home hero and privacy illustration use an intentionally empty `images/visual-placeholder.svg`; replace each with its own approved visual, not a substitute logo. The navigation logo stays in place. Replace the temporary alt description with accurate, meaningful text; use empty alt only for a truly decorative image.
 
 ### Test the forms
 
@@ -44,7 +44,8 @@ Select a size and quantity, then Order Now. JavaScript calculates the subtotal a
 
 Complete the four branded desktop mockups beside their wireframes and document accessibility, actual contribution history, and AI usage honestly using the supplied PDF template. Approve product photos, copy, stock, shipping, payment, returns and privacy information. See `assignment-checklist.md`.
 
-Figma: https://www.figma.com/design/et4i2hMIC7neGCXwESyqss/Whisker---Wonder-MAIN?node-id=512-367
+Original Figma mockups: https://www.figma.com/design/et4i2hMIC7neGCXwESyqss/Whisker---Wonder-MAIN?node-id=512-367
+Final branded editable mockups: https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=575-55
 Figma Code Layer: https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=564-390
 Published website: https://rfmoreno1.github.io/Depdende-Kung-Web-Yan/
 Brand kit: https://www.canva.com/design/DAHX-0dRhxk/P9cF5ItfWr8msgKUR_6x7g/edit
