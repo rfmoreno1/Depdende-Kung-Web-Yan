@@ -453,3 +453,35 @@ body { background: var(--cream); color:var(--navy); font-size:24px; line-height:
   .policy-item p { font-size:18px; overflow-wrap:anywhere; }
   .contact-form-panel { margin-top:32px; }
 }
+
+/* Shared navigation and action typography across all six pages.
+   Darumadrop One is reserved for display headings, not controls. */
+.site-header .nav-links a,.site-header .nav-toggle,
+.btn-primary-brand,.btn-secondary-brand,.product-card-link,
+.size-pill span,.quantity-control button,.quantity-control input,
+.product-bottom a,.faq-item summary,.policy-toc a {
+  font-family:'Nunito',Arial,sans-serif;
+  font-weight:700;
+}
+.btn-primary-brand,.btn-secondary-brand {
+  font-size:24px;
+  line-height:1.2;
+  text-transform:uppercase;
+  letter-spacing:normal;
+}
+.site-header .nav-toggle { font-size:20px; line-height:1.2; }
+.product-card-link,.product-bottom a { font-size:20px; text-transform:none; }
+.size-pill span,.quantity-control input { font-size:24px; }
+@media (max-width:767px) {
+  .btn-primary-brand,.btn-secondary-brand {
+    font-size:20px;
+    padding-inline:16px;
+  }
+  .product-card-link,.product-bottom a { font-size:18px; }
+  .size-pill span,.quantity-control input { font-size:20px; }
+  .policy-item summary h2 {
+    font-family:'Nunito',Arial,sans-serif;
+    font-size:18px;
+    font-weight:700;
+  }
+}
