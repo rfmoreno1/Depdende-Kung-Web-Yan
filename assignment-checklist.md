@@ -11,6 +11,8 @@ Use the official five-page assignment brief and progress report template for sub
 | 2a–2d: Six Bootstrap webpages | Implemented | Home, contact, privacy and three individual product pages. HTML5, viewport, titles, semantic sections, shared navigation, links and footer. |
 | Real product artwork | Blocked on artwork | The Figma product and home image slots are still gray placeholders. Replace with the three approved shirt images before submission. |
 | Brand kit | Applied to website | Canva and Figma confirm Darumadrop One, Nunito, navy, mustard, terracotta, sage and cream. Official logo and icon assets exported from Figma. |
+| Figma Code Layer | Source imported | Separate Code Layer 564:390 on the Visual Mockup page. The original frames are unchanged. Open the layer to initialize its preview; preview rendering is not yet verified. |
+| GitHub Pages | Six pages verified live | https://rfmoreno1.github.io/Depdende-Kung-Web-Yan/ |
 | 2e: JavaScript Method #2 | Implemented | Contact goes to hello@examplewebsite142.com; each product order goes to orders@examplewebsite142.com. All generate a mailto draft; no automatic sending. |
 | 2f: Accessible and Inclusive Design | Implemented; final review needed | Labels, logical headings, alt text, skip link, visible focus, clear feedback, keyboard controls, contrast and responsive layout. Verify after adding final artwork. |
 | 3: AI use documentation | Team must complete honestly | AI assistance was used to inspect the mockups, implement and revise HTML/CSS/JS, export brand assets, and test. Members should accurately describe their own design work, independent editing, testing, learning and verification. |
@@ -33,6 +35,15 @@ Use the official five-page assignment brief and progress report template for sub
 Official Figma Brand kit nodes: cat mark 8:38, stacked color 8:46, compact color 8:45, stacked black 8:44, compact black 8:43, sage icon sheet 10:5, terracotta icon sheet 10:6. Canva design: DAHX-0dRhxk. The asset exports are team-provided artwork; no substitute logo or product design has been fabricated.
 
 ## Final manual checks
+
+### Verification completed on November 18, 2026
+
+- All six published pages opened successfully; all three product pages updated the subtotal from ₱499 to ₱998 when quantity increased to two, and size selection worked.
+- Contact's required-field validation, a FAQ disclosure, and the privacy contents anchor worked in the published site.
+- Source checks verified 93 local links, 14 image references, a unique H1 per page, and matching label IDs. JavaScript syntax and four draft-generation logic tests passed (no email was sent).
+- Desktop homepage appearance reviewed. Tablet/mobile visual and keyboard checks, CDN verification across devices, and actual email-app handoff still need team testing.
+
+### Remaining checks after final artwork is added
 
 1. Open the GitHub Pages URL in a private browser, then visit all six pages.
 2. Resize to desktop, tablet and mobile widths and test with the keyboard.

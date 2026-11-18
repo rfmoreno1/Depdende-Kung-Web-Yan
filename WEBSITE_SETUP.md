@@ -45,4 +45,6 @@ Select a size and quantity, then Order Now. JavaScript calculates the subtotal a
 Complete the four branded desktop mockups beside their wireframes and document accessibility, actual contribution history, and AI usage honestly using the supplied PDF template. Approve product photos, copy, stock, shipping, payment, returns and privacy information. See `assignment-checklist.md`.
 
 Figma: https://www.figma.com/design/et4i2hMIC7neGCXwESyqss/Whisker---Wonder-MAIN?node-id=512-367
+Figma Code Layer: https://www.figma.com/design/et4i2hMIC7neGCXwESyqss?node-id=564-390
+Published website: https://rfmoreno1.github.io/Depdende-Kung-Web-Yan/
 Brand kit: https://www.canva.com/design/DAHX-0dRhxk/P9cF5ItfWr8msgKUR_6x7g/edit
