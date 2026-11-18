@@ -733,3 +733,17 @@ body { font-size:var(--type-body); line-height:1.5; }
   .hero-art { margin-top:1rem; }
   .faq-item p { padding-right:0; }
 }
+
+/* Let headings use the available width rather than forcing line breaks.
+   Natural wrapping preserves reflow and user font enlargement. */
+.hero-copy h1,.brand-story h2 {
+  white-space:normal;
+  overflow-wrap:break-word;
+  text-wrap:balance;
+}
+@media (min-width:768px) and (max-width:1050px) {
+  .hero-copy h1 { font-size:clamp(2.25rem,4.65vw,3.25rem); }
+}
+@media (min-width:1201px) {
+  .featured-layout { grid-template-columns:minmax(0,3fr) minmax(25rem,1fr); }
+}
