@@ -142,11 +142,13 @@ h1,h2,h3,p{margin-top:0}
 @media(max-width:365px){.order-action-row{flex-direction:column}.quantity-control{flex-basis:auto}.hero-copy h1{font-size:2.9rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 
-/* Brand kit: use the approved palette, fonts, rounded buttons and logo.
-   Dark button text is intentional: cream on mustard fails contrast. */
+/* Revised brand kit (18 November 2026). The five original Canva colors
+   stay unchanged; the two accessible variants are for interface text/buttons. */
 :root {
-  --ink: #243442;
-  --paper: #fffdf8;
+  --ink: #1d262f; /* Even darker navy: 4.69:1 on sage, 6.75:1 on mustard. */
+  --paper: #f3eada;
+  --button-terracotta: #cc7b52; /* 4.75:1 with dark navy; original is 4.37:1. */
+  color-scheme: light;
 }
 body { color: var(--navy); background: var(--paper); display:flex; flex-direction:column; min-height:100vh; }
 main { flex:1; }
@@ -251,4 +253,64 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .quantity-control { flex-basis:auto; }
   .product-info h1 { font-size:2.7rem; }
   .hero-copy h1 { font-size:2.7rem; }
+}
+
+/* Revised palette and type scale. Keep this block after Bootstrap and all
+   layout rules so its navbar background cannot be overridden by Bootstrap. */
+body { background: var(--cream); color:var(--navy); font-size:24px; line-height:1.45; }
+.site-header, .site-header .site-nav, .site-header .navbar, .site-header .nav-inner {
+  background-color:var(--sage) !important;
+  color:var(--ink);
+  --bs-navbar-bg:var(--sage);
+  --bs-navbar-color:var(--ink);
+  --bs-navbar-hover-color:var(--ink);
+  --bs-navbar-active-color:var(--ink);
+}
+.site-header .nav-links, .site-header .nav-links a { color:var(--ink); }
+.site-header .nav-links a { font-family:'Nunito',Arial,sans-serif; font-size:30px; font-weight:700; }
+.site-header .nav-links a:hover, .site-header .nav-links a[aria-current=page] { color:var(--ink); border-bottom-color:var(--ink); }
+.site-header .nav-toggle { color:var(--ink); border-color:var(--ink); background:var(--sage); }
+.hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:64px; color:var(--navy); line-height:1.15; }
+.section-heading,.brand-story h2,.contact-form-panel h2,.faq-section>h2,.contact-social h2,.privacy-heading h2,.policy-item h2 { font-size:40px; font-weight:400; }
+.eyebrow { font-size:40px; font-weight:400; letter-spacing:0; line-height:1.2; }
+.hero-copy p:not(.eyebrow):not(.hero-tagline),.product-description,.brand-story p,.contact-intro p,.contact-form-panel p,.policy-item p { font-size:24px; color:var(--navy); }
+.hero-tagline { font-size:24px; }
+.btn-primary-brand,.btn-secondary-brand { background:var(--button-terracotta); color:var(--ink); border:2px solid var(--ink); }
+.btn-primary-brand:hover,.btn-secondary-brand:hover { background:#d58a63; color:var(--ink); border-color:var(--ink); }
+.product-card { background:var(--mustard); color:var(--ink); }
+.product-card h3,.product-card-link,.product-card-link:hover,.product-card .price-small { color:var(--ink); }
+.product-card h3 { font-size:24px; }
+.product-card-link { font-size:20px; }
+.site-footer { background:var(--sage); color:var(--ink); font:400 20px 'Nunito',Arial,sans-serif; border-top:3px solid var(--ink); }
+.site-footer h2,.site-footer a { color:var(--ink); font-family:'Nunito',Arial,sans-serif; font-size:20px; }
+.site-footer h2 { font-weight:700; }
+.copyright { font-size:20px; }
+.contact-form-panel,.policy-toc { border:2px solid var(--navy); background:var(--cream); }
+.contact-form-panel input,.contact-form-panel textarea { color:var(--navy); }
+.faq-section,.faq-section>h2 { background:var(--cream); color:var(--navy); }
+.faq-section { border:2px solid var(--navy); }
+.faq-section>h2 { border-bottom-color:var(--navy); }
+.faq-item,.policy-item { border-color:var(--navy); }
+.site-footer a:focus-visible,.site-header a:focus-visible,.faq-item summary:focus-visible { outline-color:var(--ink); }
+.policy-toc h2 { font-size:28px; }
+.order-hint,.privacy-note,.image-caption { font-size:20px; color:var(--navy); }
+.order-subtotal { font-size:24px; }
+.mini-label { color:var(--navy); }
+@media (max-width:1050px) {
+  .site-header .nav-links a { font-size:22px; }
+  .hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:52px; }
+  .eyebrow { font-size:30px; }
+  .hero-copy p:not(.eyebrow):not(.hero-tagline),.product-description,.brand-story p,.contact-intro p,.contact-form-panel p,.policy-item p { font-size:20px; }
+}
+@media (max-width:767px) {
+  body { font-size:20px; }
+  .site-header .nav-links { background:var(--sage); }
+  .site-header .nav-links a { font-size:20px; }
+  .hero-copy h1,.product-info h1,.contact-intro h1,.privacy-heading h1 { font-size:clamp(36px,10vw,48px); }
+  .section-heading,.brand-story h2,.contact-form-panel h2,.faq-section>h2,.contact-social h2,.privacy-heading h2,.policy-item h2 { font-size:30px; }
+  .eyebrow { font-size:24px; }
+  .hero-tagline { font-size:20px; }
+  .site-footer,.site-footer h2,.site-footer a,.copyright { font-size:16px; }
+  .order-hint,.privacy-note,.image-caption { font-size:16px; }
+  .product-card-link { font-size:18px; }
 }
