@@ -696,3 +696,40 @@ body { font-size:var(--type-body); line-height:1.5; }
 @media (max-width:280px) {
   .brand-story .btn-secondary-brand,.brand-story .btn-secondary-brand > span { white-space:normal; }
 }
+
+/* FAQ: native disclosure controls, collapsed by default. The entire question
+   is a tap target and the decorative indicator reflects its open state. */
+.faq-item { padding:0; }
+.faq-item summary {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:.75rem;
+  padding:.75rem 0;
+  min-height:44px;
+  list-style:none;
+  overflow-wrap:anywhere;
+}
+.faq-item summary::-webkit-details-marker { display:none; }
+.faq-indicator {
+  display:grid;
+  place-items:center;
+  width:1.5rem;
+  height:1.5rem;
+  line-height:1;
+  font-size:1.5rem;
+  font-weight:700;
+}
+.faq-indicator::before { content:'+'; }
+.faq-item[open] .faq-indicator::before { content:'−'; }
+.faq-item p { margin:0 0 1rem; padding:0 2.25rem 0 0; overflow-wrap:anywhere; }
+.faq-item summary:focus-visible { outline-color:var(--mustard); outline-offset:3px; }
+@media (max-width:767px) {
+  .hero-section { padding-block:1.5rem 1.75rem; }
+  .hero-copy .eyebrow { margin-bottom:.625rem; }
+  .hero-copy h1 { margin-bottom:.75rem; }
+  .hero-copy p:not(.eyebrow):not(.hero-tagline) { margin-bottom:.75rem; }
+  .hero-copy p:not(.eyebrow):has(+ .btn-large) { margin-bottom:1rem; }
+  .hero-art { margin-top:1rem; }
+  .faq-item p { padding-right:0; }
+}
